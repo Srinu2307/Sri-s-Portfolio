@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: sri-portfolio
+    env: docker
+    region: oregon # You can change this to ohio, frankfurt, or singapore based on your location
+    plan: free
+    branch: main
+    envVars:
+      - key: PORT
+        value: 5000
+      - key: NODE_ENV
+        value: production
+      - key: SMTP_EMAIL
+        sync: false # Render will prompt you to enter this securely
+      - key: SMTP_APP_PASSWORD
+        sync: false # Render will prompt you to enter this securely
