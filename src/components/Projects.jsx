@@ -20,17 +20,17 @@ const projectsData = [
   },
   {
     category: 'BASH • AUTOMATION',
-    title: 'Linux System Monitoring',
-    description: 'Developed Bash-based monitoring scripts to track service uptime and detect abnormal system behavior with structured logging mechanisms.',
-    stack: ['Bash', 'Linux', 'Cron'],
-    link: '#',
+    title: 'Website Health Monitoring System',
+    description: 'A comprehensive, automated Linux Bash utility engineered to validate DNS resolution, evaluate network connectivity, monitor web services, and proactively detect security exposures in real-time.',
+    stack: ['Bash', 'Linux', 'Security'],
+    link: 'https://github.com/Srinu2307/Website-Health-Monitoring-System',
     demo: '#',
     details: {
-      problem: 'Silent service failures were causing undetected downtime in critical Linux environments.',
-      architecture: 'Cron-scheduled Bash agents pushing structured telemetry data to a centralized log server.',
-      features: ['Process health tracking', 'Disk/RAM usage alerts', 'Automated service restarts'],
-      challenges: 'Ensuring the monitoring script itself had an extremely low memory footprint.',
-      learning: 'Advanced Bash scripting, systemd integrations, and Linux internals.'
+      problem: 'Lack of automated visibility into open attack surfaces and undetected downtime in critical Linux environments.',
+      architecture: 'Cron-scheduled Bash agent executing modular health checks (DNS, ICMP, TCP, HTTP) and generating structured telemetry artifacts.',
+      features: ['DNS & ICMP Validation', 'HTTP Status & Latency Analysis', 'Security Content Inspection'],
+      challenges: 'Parsing irregular curl output and maintaining an extremely low memory footprint within a shell environment.',
+      learning: 'Advanced Bash scripting, network protocol fundamentals, and security exposure analysis.'
     }
   },
   {
@@ -46,21 +46,6 @@ const projectsData = [
       features: ['Fine-grained endpoint protection', 'Secure password hashing (Argon2)', 'Token revocation strategies'],
       challenges: 'Handling token expiry and secure refresh mechanisms without compromising statelessness.',
       learning: 'Deep understanding of OAuth2, JWTs, and secure cookie handling.'
-    }
-  },
-  {
-    category: 'INFRA • SCRIPTING',
-    title: 'Availability Checker',
-    description: 'Built a proactive infrastructure monitoring tool using Bash to detect service outages and identify open ports, simulating SOC workflows.',
-    stack: ['Bash', 'Networking', 'Ports'],
-    link: '#',
-    demo: '#',
-    details: {
-      problem: 'Lack of automated visibility into open attack surfaces on external-facing servers.',
-      architecture: 'Lightweight bash scanner utilizing netcat and curl to probe specific service states.',
-      features: ['Port scanning', 'HTTP status code verification', 'Slack webhook integration for alerts'],
-      challenges: 'Parsing irregular curl output securely in a shell environment.',
-      learning: 'Network protocol fundamentals (TCP/UDP) and bash text processing (awk/sed).'
     }
   },
   {
